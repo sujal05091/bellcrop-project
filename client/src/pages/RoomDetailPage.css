@@ -1,0 +1,126 @@
+.room-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.room-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(250, 248, 245, 1) 100%);
+}
+
+.room-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-2xl);
+  padding: var(--space-xl) 0 var(--space-3xl);
+  align-items: start;
+}
+
+.room-info h1 {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.room-description {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.amenity-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.amenity-icon {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+}
+
+/* Booking Card */
+.booking-card-wrapper {
+  position: sticky;
+  top: 88px;
+}
+
+.booking-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-xl);
+}
+
+.booking-card-price {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+}
+
+.booking-card-price .small-caps {
+  font-size: 0.8rem;
+}
+
+.price-breakdown {
+  margin: var(--space-md) 0;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.price-total {
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 1.05rem;
+}
+
+.booking-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: var(--space-md);
+  font-size: 0.95rem;
+}
+
+.conflict-alert {
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
+
+.conflict-alert strong {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+@media (max-width: 768px) {
+  .room-detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card-wrapper {
+    position: static;
+  }
+
+  .room-hero {
+    height: 260px;
+  }
+}

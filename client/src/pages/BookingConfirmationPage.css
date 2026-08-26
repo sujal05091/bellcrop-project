@@ -1,0 +1,61 @@
+.confirmation-page {
+  position: relative;
+  min-height: calc(100vh - 72px);
+}
+
+.confirmation-hero {
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.confirmation-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(44, 44, 44, 0.3) 0%, rgba(250, 248, 245, 1) 90%);
+}
+
+.confirmation-card {
+  max-width: 520px;
+  margin: -120px auto 0;
+  position: relative;
+  z-index: 1;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.confirmation-checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+}
+
+.confirmation-card h1 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  margin-bottom: var(--space-xl);
+}
+
+.confirmation-details {
+  text-align: left;
+}
+
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+  font-size: 0.9rem;
+}
