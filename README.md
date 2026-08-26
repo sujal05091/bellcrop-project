@@ -255,6 +255,8 @@ Every error response follows a consistent shape: `{ "error": "<TYPE>", "message"
 
 ## 📁 Project Structure
 
+Drive link for code zip: https://drive.google.com/drive/folders/1787TbKePEpsvKWhcUry_PEaKo-QhmH9V?usp=sharing
+
 ```
 BellCrop-project/
 ├── client/                  # React frontend (Vite)
